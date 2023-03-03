@@ -1,0 +1,6 @@
+I'm going to post each file and the errors it has. Can you help me with these errors?
+
+chatController - Namespace '"vscode"' has no exported member 'WebviewElement'.ts(2694), Property 'find' does not exist on type 'Webview'.ts(2339) (2x)
+chatPanelView - Namespace '"vscode"' has no exported member 'WebviewElement'.ts(2694), Property 'find' does not exist on type 'Webview'.ts(2339), 
+
+If you have the solution for them, please output the files and their updated code. Include an explanation of what you changed from the last version so I can follow along better. Thank you!

@@ -1,0 +1,43 @@
+{
+  "name": "vscode-gpt",
+  "displayName": "VSCode GPT",
+  "description": "A chat window extension for Visual Studio Code using ChatGPT",
+  "version": "1.0.0",
+  "publisher": "pgibler",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "pgibler.viewChatWindow",
+        "title": "View ChatGPT Window"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "pgibler.viewChatWindow",
+        "key": "ctrl+alt+h",
+        "when": "editorTextFocus"
+      }
+    ]
+  },
+  "activationEvents": [
+    "onCommand:pgibler.viewChatWindow"
+  ],
+  "dependencies": {
+    "@types/node": "^16.11.16",
+    "@types/vscode": "^1.60.0",
+    "fs-extra": "^11.1.0",
+    "openai": "^3.2.1",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pgibler/vscode-gpt.git"
+  }
+}
